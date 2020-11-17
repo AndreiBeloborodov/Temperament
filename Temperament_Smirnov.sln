@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperament_Smirnov.Android", "Temperament_Smirnov\Temperament_Smirnov.Android\Temperament_Smirnov.Android.csproj", "{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperament_Smirnov", "Temperament_Smirnov\Temperament_Smirnov\Temperament_Smirnov.csproj", "{A7EC51C6-D782-4774-AEA2-5877280FB8CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBD2814-A61F-47B6-9FAF-52905C0E24B3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EC51C6-D782-4774-AEA2-5877280FB8CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87C28849-85CF-4552-93C8-00EE6C1947D2}
+	EndGlobalSection
+EndGlobal
