@@ -10,6 +10,7 @@ namespace Temperament_Smirnov
 {
     public partial class MainPage : CarouselPage
     {
+        Label acr, air, arac, kino;
         public MainPage()
         {
             var AirophobiePage = new ContentPage
@@ -23,10 +24,11 @@ namespace Temperament_Smirnov
                             Text = "Airophobie",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                             HorizontalOptions = LayoutOptions.Center
-                        },
+        },
                         new Image
                         {
-                            Source =
+                            Source = "Airophobie.jpg",
+                            VerticalOptions= LayoutOptions.CenterAndExpand,
                         }
                     }
                 }
@@ -42,6 +44,11 @@ namespace Temperament_Smirnov
                             Text = "acrophobia",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                             HorizontalOptions = LayoutOptions.Center
+                        },
+                        new Image
+                        {
+                            Source = "acrophobia.jpg",
+                            VerticalOptions=LayoutOptions.Center
                         }
                     }
                 }
@@ -57,6 +64,11 @@ namespace Temperament_Smirnov
                             Text = "kinophobia",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                             HorizontalOptions = LayoutOptions.Center
+                        },
+                        new Image
+                        {
+                            Source = "kinophobia.jpg",
+                            VerticalOptions=LayoutOptions.Center
                         }
                     }
                 }
@@ -72,6 +84,11 @@ namespace Temperament_Smirnov
                             Text = "Arachnophobia",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                             HorizontalOptions = LayoutOptions.Center
+                        },
+                        new Image
+                        {
+                            Source = "Arachnophobia.jpg",
+                            VerticalOptions=LayoutOptions.Center
                         }
                     }
                 }
@@ -80,6 +97,6 @@ namespace Temperament_Smirnov
             Children.Add(acrophobiaPage);
             Children.Add(kinophobiaPage);
             Children.Add(ArachnophobiaPage);
+            }
         }
     }
-}
