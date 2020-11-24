@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Temperament_Smirnov
@@ -26,7 +27,7 @@ namespace Temperament_Smirnov
                     {
                         new Label
                         {
-                            Text = "Стартовая страница\n\nВиды темперамента",
+                            Text = "Стартовая страница\n\nВиды фобий",
                             TextColor = Color.SkyBlue,
                             BackgroundColor = Color.Gray,
                             HorizontalTextAlignment = TextAlignment.Center,
@@ -39,7 +40,7 @@ namespace Temperament_Smirnov
             {
                 Source = "acrophobia.jpg"
             };
-            btn1.Clicked += Btn1_Clicked;
+            btn1.Clicked += Btn1_Clicked; ;
             var acrophobia = new ContentPage
             {
                 Content = new StackLayout
@@ -62,7 +63,7 @@ namespace Temperament_Smirnov
             {
                 Source = "Airophobie.jpg"
             };
-            btn2.Clicked += Btn2_Clicked1;
+            btn2.Clicked += Btn2_Clicked; ;
             var Airophobie = new ContentPage
             {
                 Content = new StackLayout
@@ -85,7 +86,7 @@ namespace Temperament_Smirnov
             {
                 Source = "Arachnophobia.jpg"
             };
-            btn3.Clicked += Btn3_Clicked1;
+            btn3.Clicked += Btn3_Clicked1; ;
             var Arachnophobia = new ContentPage
             {
                 Content = new StackLayout
@@ -108,7 +109,7 @@ namespace Temperament_Smirnov
             {
                 Source = "kinophobia.jpg"
             };
-            btn4.Clicked += Btn4_Clicked1;
+            btn4.Clicked += Btn4_Clicked; ;
             var kinophobia = new ContentPage
             {
                 Content = new StackLayout
@@ -134,24 +135,24 @@ namespace Temperament_Smirnov
             Children.Add(Airophobie);
         }
 
-        private void Btn1_Clicked(object sender, EventArgs e)
+        private async void Btn4_Clicked(object sender, EventArgs e)
         {
-            await Browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%80%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
+            await Browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
         }
 
-        private void Btn4_Clicked1(object sender, EventArgs e)
-        {
-            await browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
-        }
-
-        private void Btn3_Clicked1(object sender, EventArgs e)
+        private async void Btn3_Clicked1(object sender, EventArgs e)
         {
             await Browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B0%D1%85%D0%BD%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
         }
 
-        private void Btn2_Clicked1(object sender, EventArgs e)
+        private async void Btn2_Clicked(object sender, EventArgs e)
         {
             await Browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%90%D1%8D%D1%80%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
+        }
+
+        private async void Btn1_Clicked(object sender, EventArgs e)
+        {
+            await Browser.OpenAsync("https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%80%D0%BE%D1%84%D0%BE%D0%B1%D0%B8%D1%8F", BrowserLaunchMode.SystemPreferred);
         }
     }
 }
